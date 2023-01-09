@@ -17,7 +17,7 @@ inside the "srtc/config" folder create  a new file "config.json" and then add te
     "dialect": "mysql"
   }
 }
-
+- once you have added your db config as listed above, go to the src folder from your terminal and execute "npx sequelize db:create"
 
 -src/
  index.js //server
