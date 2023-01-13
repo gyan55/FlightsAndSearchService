@@ -14,12 +14,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
 
-app.use('/api',ApiRoutes);
+app.use('/api',ApiRoutes); 
 
 app.listen(3000, () => {
    console.log(`server started at ${PORT}`);
    const repo = new CityRepository();
-   repo.createCity({name:"new delhi"});
 }) 
 
 
