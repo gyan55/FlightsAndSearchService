@@ -1,5 +1,6 @@
  const {City } = require('../models/index');
-
+ const { Op } = require('sequelize');
+ 
  class CityRepository {
     async createCity({ name }) { 
         try {
@@ -58,9 +59,9 @@
         }
     }
 
-    async getAllCities() { // filter can be empty also
+    async getAllCities(filter) { // filter can be empty also
         try {
-           /* if(filter.name) {
+           if(filter.name) {
                 const cities = await City.findAll({
                     where: {
                         name: {
@@ -69,7 +70,7 @@
                     }
                 });
                 return cities;
-            } */
+            } 
             const cities = await City.findAll();
             return cities;
         } catch (error) {
