@@ -37,7 +37,19 @@ module.exports = {
         cityId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
-      }
+      },
+      {
+        name: 'biju pattnaik International Airport',
+        cityId: 2,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'rajiv gandhi International Airport',
+        cityId: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ], {});
   },
 

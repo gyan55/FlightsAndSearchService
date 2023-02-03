@@ -21,9 +21,9 @@ app.listen(3000, async () => {
    console.log(`server started at ${PORT}`);
    const repo = new CityRepository();
 
-   if(process.env.SYNC_DB){
-       db.sequelize.sync({alter:true});
-   }
+   // if(process.env.SYNC_DB){
+   //     db.sequelize.sync({alter:true});
+   // }
   
 }); 
 
